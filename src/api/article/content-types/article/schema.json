@@ -1,0 +1,42 @@
+{
+  "kind": "collectionType",
+  "collectionName": "articles",
+  "info": {
+    "singularName": "article",
+    "pluralName": "articles",
+    "displayName": "article",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Title": {
+      "type": "string",
+      "minLength": 1,
+      "required": false
+    },
+    "body": {
+      "type": "richtext"
+    },
+    "secret": {
+      "type": "customField",
+      "options": {
+        "hint": null,
+        "roles": [
+          2,
+          3,
+          1,
+          "id"
+        ]
+      },
+      "customField": "plugin::encryptable-field.encryptable-field"
+    },
+    "encrypted": {
+      "type": "boolean",
+      "default": false,
+      "required": true
+    }
+  }
+}
