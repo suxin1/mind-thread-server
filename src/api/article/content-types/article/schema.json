@@ -20,19 +20,6 @@
     "body": {
       "type": "richtext"
     },
-    "secret": {
-      "type": "customField",
-      "options": {
-        "hint": null,
-        "roles": [
-          2,
-          3,
-          1,
-          "id"
-        ]
-      },
-      "customField": "plugin::encryptable-field.encryptable-field"
-    },
     "encrypted": {
       "type": "boolean",
       "default": false,

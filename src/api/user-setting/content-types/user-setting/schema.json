@@ -14,12 +14,6 @@
   "attributes": {
     "encryption_on": {
       "type": "boolean"
-    },
-    "user": {
-      "type": "relation",
-      "relation": "oneToOne",
-      "target": "plugin::users-permissions.user",
-      "mappedBy": "user_setting"
     }
   }
 }
